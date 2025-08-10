@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcelo Ferreira de Menezes — MBAM | Site Profissional</title>
+  <meta name="description" content="Site profissional de Marcelo Ferreira de Menezes (MBAM): Cloud Computing (AWS), Agro Sustentável, Consultoria e Gestão." />
+  <meta name="theme-color" content="#0F172A" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Marcelo Ferreira de Menezes — MBAM" />
+  <meta property="og:description" content="Cloud (AWS) + Agro Sustentável. Consultoria, tecnologia e resultados." />
+  <meta property="og:image" content="/assets/og-cover.jpg" />
+  <meta property="og:url" content="https://mfdemenezes.mbam.com.br/" />
+
+  <!-- SEO extras -->
+  <link rel="canonical" href="https://mfdemenezes.mbam.com.br/" />
+  <meta name="robots" content="index,follow" />
+
+  <!-- Fonts (opcional) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0b1020;       /* azul bem escuro (fundo) */
+      --bg-2:#0f172a;     /* variação para seções */
+      --txt:#e5e7eb;      /* cinza claro do texto */
+      --muted:#9ca3af;    /* texto secundário */
+      --brand:#1d4ed8;    /* azul destaque */
+      --brand-2:#60a5fa;  /* azul claro para hovers */
+      --card:#111827;     /* cinza azulado para cartões */
+      --stroke:#1f2937;   /* linhas sutis */
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background:linear-gradient(180deg,var(--bg) 0%, var(--bg-2) 100%);
+      color:var(--txt);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{color:var(--brand-2)}
+    .container{max-width:1120px; margin:0 auto; padding:0 20px}
+    .btn{display:inline-flex; align-items:center; gap:10px; background:var(--brand); color:#fff; padding:12px 18px; border-radius:14px; font-weight:600; border:1px solid transparent; transition:.25s}
+    .btn:hover{background:transparent; border-color:var(--brand); color:var(--brand-2)}
+    .btn.outline{background:transparent; border:1px solid var(--stroke); color:var(--txt)}
+    .badge{display:inline-block; padding:6px 10px; border:1px solid var(--stroke); border-radius:999px; color:var(--muted); font-size:12px; letter-spacing:.2px}
+    header{position:sticky; top:0; z-index:40; backdrop-filter:saturate(180%) blur(10px); background:rgba(11,16,32,.6); border-bottom:1px solid var(--stroke)}
+    nav{display:flex; align-items:center; justify-content:space-between; height:70px}
+    .logo{display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.4px}
+    .logo-mark{width:32px; height:32px; border-radius:8px; background:linear-gradient(135deg,var(--brand),#020617); display:grid; place-items:center; font-size:14px}
+    .navlinks{display:flex; gap:22px; align-items:center}
+    .navlinks a{color:var(--txt); opacity:.9}
+    .navlinks a:hover{opacity:1}
+    .menu-btn{display:none}
+
+    /* Hero */
+    .hero{padding:72px 0 40px}
+    .hero-grid{display:grid; grid-template-columns:1.9fr .9fr; gap:40px; align-items:center}
+    .title{font-size:44px; line-height:1.08; margin:12px 0 10px; font-weight:800}
+    .subtitle{color:var(--muted); font-size:18px; max-width:64ch}
+    .actions{margin-top:28px; display:flex; gap:14px; flex-wrap:wrap}
+    .hero-card{background:radial-gradient(1200px 600px at 20% -20%, rgba(29,78,216,.25), transparent 60%), var(--card); border:1px solid var(--stroke); border-radius:20px; padding:20px; display:flex; gap:18px; align-items:center}
+    .hero-card img{width:72px; height:72px; border-radius:14px; object-fit:cover; border:1px solid var(--stroke)}
+
+    /* Sections */
+    section{padding:64px 0; border-top:1px solid var(--stroke)}
+    h2{font-size:28px; margin:0 0 10px}
+    p.lead{color:var(--muted); max-width:70ch}
+
+    /* Cards grid */
+    .grid{display:grid; gap:18px}
+    .grid.cards{grid-template-columns:repeat(12,1fr)}
+    .card{grid-column:span 4; background:var(--card); border:1px solid var(--stroke); border-radius:18px; padding:18px}
+    .card h3{margin:6px 0 6px; font-size:18px}
+    .card p{color:var(--muted); font-size:14px}
+
+    /* Experience */
+    .timeline{display:grid; gap:16px; margin-top:12px}
+    .item{background:var(--card); border:1px solid var(--stroke); border-radius:16px; padding:16px}
+    .item .when{font-size:12px; color:var(--muted)}
+
+    /* Footer */
+    footer{border-top:1px solid var(--stroke); padding:28px 0 60px; color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width: 980px){
+      .hero-grid{grid-template-columns:1fr;}
+      .title{font-size:36px}
+      .navlinks{display:none}
+      .menu-btn{display:inline-flex}
+    }
+    @media (max-width: 640px){
+      .card{grid-column:span 12}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Principal">
+        <a class="logo" href="#home" aria-label="MBAM - Início">
+          <span class="logo-mark" aria-hidden="true">MB</span>
+          <span>MBAM</span>
+        </a>
+        <button class="menu-btn btn outline" aria-controls="menu" aria-expanded="false" onclick="toggleMenu()">Menu</button>
+        <div id="menu" class="navlinks" role="navigation">
+          <a href="#sobre">Sobre</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#artigos">Artigos</a>
+          <a href="#contato" class="btn">Contato</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="badge">• Zootecnia • Agro • Tecnologia • Cloud AWS • DevOps • </span>
+          <h1 class="title">Marcelo Ferreira de Menezes</h1>
+          <p class="subtitle">Profissional com atuação em <strong>Zootecnia</strong>, gestão e <strong>consultoria agropecuária sustentável</strong>. Experiência prática em nutrição e reprodução animal, otimização de processos e transformação digital no campo. Em estudo para certificações e preparação para o mercado de teconogia e me expecializando em infraestrutura, <strong>DevOps e Cloud Computing (AWS)</strong> 
+          <div class="actions">
+            <a class="btn" href="#contato">Fale comigo</a>
+            <a class="btn outline" href="#servicos">Ver serviços</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre mim</h2>
+      <p class="lead">Sou formado em Zootecnia, vivi e gerenciei operações de fazenda por anos e hoje estou focado em <strong>soluções em nuvem na AWS</strong> aplicadas ao agronegócio, produtividade e sustentabilidade. Busco unir conhecimento técnico do campo com tecnologia para gerar impacto real.</p>
+    </div>
+  </section>
+
+  
+  
+
+<section id="formacao">
+    <div class="container">
+      <h2>Formação acadêmica</h2>
+      <div class="timeline">
+        <div class="item">
+          <div class="when">2010</div>
+          <strong>Bacharelado em Zootecnia</strong>
+            <p class="lead">Formação superior voltada para o planejamento, manejo e otimização da produção animal, com enfoque em sustentabilidade e eficiência produtiva. As principais áreas de estudo incluíram:</p>
+            <p></p>Nutrição Animal </p>
+            <p class="lead"> – Formulação de dietas balanceadas para gado de corte, leite e outras espécies, considerando exigências nutricionais, custo-benefício e impacto ambiental.</p>
+            <p></p>Reprodução e Melhoramento Genético<p>
+            <p class="lead"> – Técnicas de inseminação artificial, seleção de reprodutores e manejo reprodutivo para aumento de produtividade e qualidade do rebanho.</p>
+            <p></p>Manejo de Pastagens<p>
+            <p class="lead"> – Planejamento e implantação de sistemas de pastejo rotacionado, integração lavoura-pecuária e conservação de forrageiras.</p>
+            <p></p>Produção de Ruminantes e Monogástricos<p>
+            <p class="lead"> – Estratégias de criação, sanidade e bem-estar animal em sistemas intensivos e extensivos.</p>
+            <p></p>Tecnologia de Produtos de Origem Animal<p>
+            <p class="lead"> – Processamento e controle de qualidade de carne, leite e derivados.</p>
+            <p></p>Gestão e Economia Rural<p>
+            <p class="lead"> – Planejamento econômico, gestão de propriedades rurais e análise de viabilidade de projetos agropecuários.</p>
+            </div>
+
+  <section id="servicos">
+    <div class="container">
+      <h2>Serviços & Competências</h2>
+      <p class="lead">Atuação em tecnologia e gestão, com entregas orientadas a resultado.</p>
+      <div class="grid cards" style="margin-top:16px">
+        <article class="card">
+          <span class="badge">Cloud & DevOps</span>
+          <h3>AWS Foundations & Automação</h3>
+          <p>Arquitetura básica na AWS, S3 estático, autenticação com Cognito, pipelines Git e boas práticas de segurança.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Agro</span>
+          <h3>Consultoria Agro Sustentável</h3>
+          <p>Manejo de pastagens, ILPF, nutrição e reprodução animal, melhorias de produtividade e qualidade.</p>
+        </article>
+        <article class="card">
+          <span class="badge">Gestão</span>
+          <h3>Processos & Qualidade</h3>
+          <p>Diagnóstico, padronização e treinamento de equipes, com foco em eficiência e segurança alimentar.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+  <section id="experiencia">
+    <div class="container">
+      <h2>Experiência selecionada</h2>
+      <div class="timeline">
+       
+         <div class="item">
+          <div class="when">1997–1999</div>
+          <strong>Meridional Câmbio, Viagem e Turismo – Assistente Administrativo (1997 – 1999)</strong>
+            <p class="lead">Atendimento ao cliente, emissão de passagens e reservas de hospedagem.
+            <p class="lead">Apoio no setor financeiro, controle de caixa e conciliação bancária.
+            <p class="lead">Suporte às operações de câmbio e documentação de viagens internacionais.
+        </div>
+        <div class="item">
+          <div class="when">1999–2002</div>
+          <strong>Routetur – Agência de Turismo – Sócio Proprietário (1999 – 2002)</strong>
+            <p class="lead">Estruturação e gestão de agência de turismo com foco em viagens nacionais e internacionais.<p>
+            <p class="lead">Negociação com fornecedores e criação de pacotes personalizados para diferentes públicos.<p>
+            <p class="lead">Gestão administrativa e financeira da empresa.<p>
+        </div>
+      <div class="item">
+          <div class="when">+19 anos</div>
+          <strong>Fazenda Recreio do Paraíso – Proprietário e Gestor Agropecuário (2003 – 2022)</strong>
+            <p class="lead">Administração geral de propriedade rural localizada em Piraí–RJ, com foco em sistemas sustentáveis de produção animal.
+            <p class="lead">Implantação e manejo de sistemas de pastagem rotacionada e integração lavoura-pecuária-floresta (ILPF), visando aumento da produtividade e preservação ambiental.
+            <p class="lead">Gestão de rebanho de gado de corte e leiteiro, incluindo manejo nutricional, reprodutivo e sanitário.
+            <p class="lead">Desenvolvimento e aplicação de protocolos de reprodução assistida para melhoria genética do rebanho.
+            <p class="lead">Gestão de equipe, controle de custos e planejamento estratégico para expansão das atividades.
+            <p class="lead">Parcerias com fornecedores e clientes para comercialização de carne e leite de alta qualidade.</p>
+        </div>
+        <div class="item">
+          <div class="when">2008–2024</div>
+          <strong>Hotel Fazenda Recreio do Paraíso (2008 – 2024)</strong>
+            <p class="lead">Coordenação e gestão de um hotel fazenda integrado à atividade agropecuária, unindo turismo rural e produção sustentável.
+            <p class="lead">Planejamento e execução de eventos corporativos, religiosos e familiares, como retiros, encontros e convenções.
+            <p class="lead">Implementação de práticas de hospitalidade e atendimento ao cliente que elevaram o índice de satisfação e fidelização.
+            <p class="lead">Desenvolvimento de pacotes turísticos integrando hospedagem, gastronomia e experiências rurais.
+            <p class="lead">Gestão de equipe multidisciplinar (hotelaria, gastronomia, agro-turismo, manutenção e lazer).</p>
+        </div>
+         <div class="item">
+          <div class="when">2022–2023</div>
+          <strong>Du Xico Embutidos e Defumados (2022–2023)</strong>
+            <p class="lead">Reestruturação de processos produtivos visando eficiência, qualidade e segurança alimentar.</p>
+            <p class="lead">Criação de novos produtos e adequação de receitas para atender demandas de mercado, como embutidos frescos e defumados, salames, pastramis, mortadelas, bacon e peças defumadas como lombo, costela e pernil defumados além do joelho defumado (Eisben) .
+            <p class="lead">Treinamento e capacitação de funcionários em boas práticas de fabricação e atendimento ao cliente.</p>
+            <p class="lead">Desenvolvimento de estratégias de marketing e expansão para novos pontos de venda..</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="artigos">
+    <div class="container">
+      <h2>Artigos & Publicações</h2>
+      <p class="lead">Conteúdo técnico e opiniões publicados no LinkedIn.</p>
+      <div class="grid cards" style="margin-top:16px">
+        <article class="card" aria-label="Artigo no LinkedIn">
+          <h3>Pastagem Rotacionada e Integração Lavoura-Pecuária-Floresta (ILPF): O futuro da Agropecuária Americana está na Produção Regenerativa</h3>
+          <p>Estratégias práticas para produtividade e sustentabilidade. <a href="https://www.linkedin.com/pulse/pastagem-rotacionada-e-integra%25C3%25A7%25C3%25A3o-ilpf-o-futuro-da-na-marcelo-ku8ve/" target="_blank" aria-label="Ler no LinkedIn">Ler no LinkedIn →</a></p>
+        </article>
+        <article class="card" aria-label="Artigo no LinkedIn">
+          <h3>Charcutaria de Valor Agregado: Quando a Zootecnia Encontra a Identidade Territorial</h3>
+          <p>Primeiros passos para valor com dados no campo. <a href="https://www.linkedin.com/pulse/charcutaria-de-valor-agregado-quando-zootecnia-ferreira-de-menezes-kkjqe/?trackingId=WFV70Dm1Q0GKh4lqGiA%2Fcw%3D%3D" target="_blank">Ler no LinkedIn →</a></p>
+        </article>
+        <article class="card" aria-label="Artigo no LinkedIn">
+          <h3>Boas práticas de qualidade no processamento</h3>
+          <p>Padronização, registros e cultura de melhoria contínua. <a href="#">Ler no LinkedIn →</a></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p class="lead">Prefere falar agora? Envie um e-mail ou mensagem no LinkedIn.</p>
+      <div class="actions" style="margin-top:10px">
+        <a class="btn" href="mailto:mfdemenezes@mbam.com.br">mfdemenezes@mbam.com.br</a>
+        <a class="btn outline" href="https://www.linkedin.com/in/marcelo-ferreira-de-menezes-b0190233b/" target="_blank" rel="noopener">LinkedIn</a>
+      
+  </section>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
+        <div>© <span id="year"></span> MBAM — Marcelo Ferreira de Menezes</div>
+        <div class="badge">Feito para performance (S3 estático)</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Marcelo Ferreira de Menezes",
+    "url": "https://mfdemenezes.mbam.com.br/",
+    "jobTitle": "Consultor | Cloud (AWS) & Agro",
+    "sameAs": [
+      "https://www.linkedin.com/in/mfdemenezes/"
+    ]
+  }
+  </script>
+
+  <script>
+    // Utilidades simples de UI
+    const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+    function toggleMenu(){
+      const m = document.getElementById('menu');
+      const btn = document.querySelector('.menu-btn');
+      const open = getComputedStyle(m).display === 'none';
+      m.style.display = open ? 'flex' : 'none';
+      btn.setAttribute('aria-expanded', String(open));
+    }
+  </script>
+</body>
+</html>
