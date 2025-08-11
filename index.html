@@ -61,6 +61,22 @@
     .lang-switch{display:flex; align-items:center; gap:8px}
     .lang-switch button{background:transparent; border:1px solid var(--stroke); color:var(--txt); padding:6px 10px; border-radius:10px; cursor:pointer}
     .lang-switch button.active{border-color:var(--brand); color:var(--brand-2)}
+    /* Hero image */
+    .hero-img {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+      margin-top: -250px; /* puxa a imagem para cima */
+      margin-right: -300px; /* empurra mais pra direita */
+    }
+
+    .hero-img img {
+      max-width: 100%;
+      width: 200px; /* tamanho ajustável */
+      border-radius: 20px;
+      border: 2px solid var(--stroke);
+      object-fit: cover;
+    }
 
     /* Hero */
     .hero{padding:72px 0 40px}
@@ -138,6 +154,11 @@
             <a class="btn" href="#contato" data-i18n="hero.ctaPrimary">Fale comigo</a>
             <a class="btn outline" href="#servicos" data-i18n="hero.ctaSecondary">Ver serviços</a>
           </div>
+<!-- Coluna da direita com a imagem -->
+      <div class="hero-img">
+        <img src="Captura%20de%20tela%202025-05-23%20091537.png" alt="Foto de Marcelo Ferreira de Menezes">
+      </div>
+
         </div>
       </div>
     </div>
