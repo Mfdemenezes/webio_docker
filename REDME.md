@@ -1,6 +1,6 @@
 git status
 git remote -v
-git pull --rebase
+git pull 
 
 
 # dentro da pasta 
