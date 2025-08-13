@@ -10,4 +10,4 @@ COPY . /usr/share/nginx/html
 # Expor a porta HTTP
 EXPOSE 80
 
-# O comando padrão já inicia o Nginx
+
