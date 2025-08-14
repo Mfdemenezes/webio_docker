@@ -1,5 +1,5 @@
 <!--
-#dentro da Ec2
+#dentro da Ec2 lembrar de mudar de usuario , sair do root
 
 su - ec2-user
 cd /
