@@ -1,13 +1,10 @@
-# Usar a imagem oficial do Nginx
 FROM nginx:alpine
 
-# Apagar a página default do Nginx
 RUN rm -rf /usr/share/nginx/html/*
 
-# Copiar o conteúdo do site para a pasta padrão do Nginx
-COPY . /usr/share/nginx/html
+COPY --chown=nginx:nginx . /usr/share/nginx/html
 
-# Expor a porta HTTP
+# Garantir leitura pública para todos os PDFs do site
+RUN find /usr/share/nginx/html -name "*.pdf" -exec chmod 644 {} \;
+
 EXPOSE 80
-
-
