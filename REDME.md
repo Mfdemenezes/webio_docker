@@ -1,3 +1,7 @@
+#dentro da Ec2
+
+cd /
+cd /home/ec2-user/webio
 git status
 git remote -v
 git pull 
