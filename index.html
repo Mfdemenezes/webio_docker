@@ -100,15 +100,111 @@
     /* Footer */
     footer{border-top:1px solid var(--stroke); padding:28px 0 60px; color:var(--muted)}
 
+    /* Cursos - Estilos específicos */
+    .category-section {
+      margin-bottom: 3rem;
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .category-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--stroke);
+    }
+
+    .category-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 1rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      background: var(--brand);
+    }
+
+    .category-title {
+      font-size: 1.5rem;
+      color: var(--txt);
+      margin: 0;
+      margin-right: 1rem;
+    }
+
+    .course-count {
+      background: var(--brand);
+      color: white;
+      padding: 0.3rem 0.8rem;
+      border-radius: 16px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .card.course-card {
+      background: var(--bg);
+      border: 1px solid var(--stroke);
+      border-radius: 12px;
+      padding: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .card.course-card:hover {
+      transform: translateY(-3px);
+      border-color: var(--brand);
+      box-shadow: 0 8px 25px rgba(29, 78, 216, 0.15);
+    }
+
+    .card.course-card h3 {
+      color: var(--txt);
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .card.course-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0;
+    }
+
+    .card.course-card strong {
+      color: var(--brand-2);
+      font-weight: 600;
+    }
+
     /* Responsive */
     @media (max-width: 980px){
       .hero-grid{grid-template-columns:1fr;}
       .title{font-size:36px}
       .navlinks{display:none}
       .menu-btn{display:inline-flex}
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
     }
     @media (max-width: 640px){
       .card{grid-column:span 12}
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .category-header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .category-icon {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+      }
     }
   </style>
 </head>
@@ -143,8 +239,8 @@
           <div class="actions">
             <a class="btn" href="#contato">Fale comigo</a>
             <a class="btn" href="#curso">Ver cursos</a>
-            <a class="btn" href="Curriculo_Portugues.pdf" target="_blank">Ver currículo</a>
-
+            <a class="btn" href="Curriculo_Portugues.pdf" target="_blank">Ver currículo<br>Portugues</a>
+            <a class="btn" href="Curriculo_English.pdf" target="_blank">Ver currículo<br>Inglês</a>
           </div>
 
           <!-- Coluna da direita com a imagem -->
@@ -199,168 +295,133 @@
     </div>
   </section>
 
-
-  <section id="curso">
+  <section id="curso"> 
     <div class="container">
-      <h2>Cursos</h2>
-      <p class="lead">Relação de todos os cursos e certificações, por área.</p>
+      <h2>Cursos e Certificações</h2>
+      <p class="lead">Relação de todos os cursos organizados por área de conhecimento</p>
 
-      <div class="grid cards" style="margin-top:16px">
-        <!-- 1 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Universidade de Illinois em Urbana-Champaign</h3>
-          <p><strong>Produção sustentável de alimentos por meio do manejo da saúde do gado</strong></p>
-          <ul></ul>
-        </article>
+      <!-- Zootecnia -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon">🐄</div>
+          <h3 class="category-title">Zootecnia</h3>
+          <span class="course-count">11 cursos</span>
+        </div>
+        <div class="cards-grid">
+          <article class="card course-card">
+            <h3>Universidade de Illinois em Urbana-Champaign</h3>
+            <p><strong>Produção sustentável de alimentos por meio do manejo da saúde do gado</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Universidade Estadual da Pensilvânia (EUA)</h3>
+            <p><strong>Produção e Gestão de Laticínios</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>CRV Lagoa — Lagoa da Serra</h3>
+            <p><strong>Transforme Sua Fazenda em Empresa: Gestão, Liderança e Tecnologia</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>ACAMPAR — Assoc. Apicultores do Médio Paraíba e Baixada Fluminense</h3>
+            <p><strong>Curso de Meliponicultura — 4ª Festa do Mel</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>CRV Lagoa — Lagoa da Serra</h3>
+            <p><strong>Curso Prático de Inseminação Artificial</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Sociedade Brasileira de Zootecnia (SBZ)</h3>
+            <p><strong>2º Workshop de Forragem</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Prefeitura de Paty dos Alferes — RJ</h3>
+            <p><strong>4º Festival do Mel</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Agronegócio do Rio de Janeiro</h3>
+            <p><strong>4º Agronegócio do Rio de Janeiro</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>O Futuro do Agronegócio na "Nova Economia"</h3>
+            <p><strong>3º Agri Business Internet — E-Commerce B2B</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Associação Brasileira de Zootecnia (ABZ)</h3>
+            <p><strong>ZOOTEC 2001 — XI CBZ & III Congresso Internacional</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Universidade Castelo Branco</h3>
+            <p><strong>III Semana de Medicina Veterinária</strong></p>
+          </article>
+        </div>
+      </div>
 
-        <!-- 2 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Universidade Estadual da Pensilvânia (EUA)</h3>
-          <p><strong>Produção e Gestão de Laticínios</strong></p>
-          <ul></ul>
-        </article>
+      <!-- Tecnologia -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon">💻</div>
+          <h3 class="category-title">Tecnologia</h3>
+          <span class="course-count">4 cursos</span>
+        </div>
+        <div class="cards-grid">
+          <article class="card course-card">
+            <h3>Amazon Web Services</h3>
+            <p><strong>AWS Certified Cloud Practitioner (CLF-C02)</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Curso Especializado</h3>
+            <p><strong>Docker de Zero a Avançado</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Controle de Versão</h3>
+            <p><strong>Git e GitHub</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Programação</h3>
+            <p><strong>Python — completo: zero a avançado + projetos reais (2025)</strong></p>
+          </article>
+        </div>
+      </div>
 
-        <!-- 3 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>CRV Lagoa — Lagoa da Serra</h3>
-          <p><strong>Transforme Sua Fazenda em Empresa: Gestão, Liderança e Tecnologia</strong></p>
-          <ul></ul>
-        </article>
+      <!-- Queijaria -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon">🧀</div>
+          <h3 class="category-title">Queijaria</h3>
+          <span class="course-count">1 curso</span>
+        </div>
+        <div class="cards-grid">
+          <article class="card course-card">
+            <h3>Escola de Laticínios Docina Nutrição</h3>
+            <p><strong>Curso de Queijo Artesanal</strong></p>
+          </article>
+        </div>
+      </div>
 
-        <!-- 4 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>ACAMPAR — Assoc. Apicultores do Médio Paraíba e Baixada Fluminense</h3>
-          <p><strong>Curso de Meliponicultura — 4ª Festa do Mel</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 5 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>CRV Lagoa — Lagoa da Serra</h3>
-          <p><strong>Curso Prático de Inseminação Artificial</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 6 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Sociedade Brasileira de Zootecnia (SBZ)</h3>
-          <p><strong>2º Workshop de Forragem</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 7 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Prefeitura de Paty dos Alferes — RJ</h3>
-          <p><strong>4º Festival do Mel</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 8 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Agronegócio do Rio de Janeiro</h3>
-          <p><strong>4º Agronegócio do Rio de Janeiro</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 9 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>O Futuro do Agronegócio na “Nova Economia”</h3>
-          <p><strong>3º Agri Business Internet — E-Commerce B2B</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 10 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Associação Brasileira de Zootecnia (ABZ)</h3>
-          <p><strong>ZOOTEC 2001 — XI CBZ & III Congresso Internacional</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 11 -->
-        <article class="card">
-          <span class="badge">Zootecnia</span>
-          <h3>Universidade Castelo Branco</h3>
-          <p><strong>III Semana de Medicina Veterinária</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 12 -->
-        <article class="card">
-          <span class="badge">Tecnologia</span>
-          <h3>AWS Certified Cloud Practitioner (CLF-C02)</h3>
-          <ul></ul>
-        </article>
-
-        <!-- 13 -->
-        <article class="card">
-          <span class="badge" data-i18n="courses.badge.tech">Tecnologia</span>
-          <h3 data-i18n="courses.card13.title">Docker de Zero a Avançado</h3>
-          <ul data-i18n="courses.card13.items"></ul>
-        </article>
-
-        <!-- 14 -->
-        <article class="card">
-          <span class="badge" data-i18n="courses.badge.tech">Tecnologia</span>
-          <h3 data-i18n="courses.card14.title">Git e GitHub</h3>
-          <ul data-i18n="courses.card14.items"></ul>
-        </article>
-
-        <!-- 15 -->
-        <article class="card">
-          <span class="badge" data-i18n="courses.badge.tech">Tecnologia</span>
-          <h3 data-i18n="courses.card15.title">Python — completo: zero a avançado + projetos reais (2025)</h3>
-          <ul data-i18n="courses.card15.items"></ul>
-        </article>
-
-        <!-- 16 -->
-        <article class="card">
-          <span class="badge">Queijaria</span>
-          <h3>Escola de Laticínios Docina Nutrição</h3>
-          <p><strong>Curso de Queijo Artesanal</strong></p>
-          <ul"></ul>
-        </article>
-
-        <!-- 17 -->
-        <article class="card">
-          <span class="badge">Charcutaria</span>
-          </h3>Curata — Escola de Charcutaria (Instrutor: Navarro)</h3>
-          <p><strong">Curso Intensivo de Charcutaria Artesanal</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 18 -->
-        <article class="card">
-          <span class="badge">Charcutaria</span>
-          <h3>A Cava — Escola de Charcutaria (Instrutor: Peterson)</h3>
-          <p><strong>Salsichas Artesanais 2.0</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 19 -->
-        <article class="card">
-          <span class="badge">Charcutaria</span>
-          <h3>Dos Pés à Cabeça — Chef André Vitaliano</h3>
-          <p><strong>Enchidos Artesanais Frescos e Defumados</strong></p>
-          <ul></ul>
-        </article>
-
-        <!-- 20 -->
-        <article class="card">
-          <span class="badge">Charcutaria</span>
-          <h3>Dos Pés à Cabeça — Chef André Vitaliano</h3>
-          <p><strong>Preparações de Carne de Porco Crocante</strong></p>
-          <ul></ul>
-        </article>
+      <!-- Charcutaria -->
+      <div class="category-section">
+        <div class="category-header">
+          <div class="category-icon">🥩</div>
+          <h3 class="category-title">Charcutaria</h3>
+          <span class="course-count">4 cursos</span>
+        </div>
+        <div class="cards-grid">
+          <article class="card course-card">
+            <h3>Curata — Escola de Charcutaria (Instrutor: Navarro)</h3>
+            <p><strong>Curso Intensivo de Charcutaria Artesanal</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>A Cava — Escola de Charcutaria (Instrutor: Peterson)</h3>
+            <p><strong>Salsichas Artesanais 2.0</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Dos Pés à Cabeça — Chef André Vitaliano</h3>
+            <p><strong>Enchidos Artesanais Frescos e Defumados</strong></p>
+          </article>
+          <article class="card course-card">
+            <h3>Dos Pés à Cabeça — Chef André Vitaliano</h3>
+            <p><strong>Preparações de Carne de Porco Crocante</strong></p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -448,7 +509,10 @@
     <div class="container">
       <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap">
         <div>© <span id="year"></span> MBAM — Marcelo Ferreira de Menezes</div>
-        <div class="badge">Feito para performance (S3 estático)</div>
+        <div style="display:flex; gap:10px; align-items:center; flex-wrap:wrap">
+          <div class="badge">Feito para performance (S3 estático)</div>
+          <div class="badge" title="Crédito de autoria">Feito por você</div>
+        </div>
       </div>
     </div>
   </footer>
@@ -456,26 +520,18 @@
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Marcelo Ferreira de Menezes",
-    "url": "https://mfdemenezes.mbam.com.br/",
-    "jobTitle": "Consultor | Cloud (AWS) & Agro",
-    "sameAs": [
-      "https://www.linkedin.com/in/marcelo-ferreira-de-menezes/"
-    ]
-  }
+    "@context": "https://schema.
   </script>
 
   <script>
-    // utilidades simples de UI
-    const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear();
+    // Atualiza o ano automaticamente
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simples toggle do menu em telas menores
     function toggleMenu(){
-      const m = document.getElementById('menu');
-      const btn = document.querySelector('.menu-btn');
-      const open = getComputedStyle(m).display === 'none';
-      m.style.display = open ? 'flex' : 'none';
-      btn.setAttribute('aria-expanded', String(open));
+      const menu = document.getElementById('menu');
+      const isOpen = menu.style.display === 'flex';
+      menu.style.display = isOpen ? 'none' : 'flex';
     }
   </script>
 </body>
