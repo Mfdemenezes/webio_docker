@@ -179,13 +179,13 @@ AWS (complementar):
 
 - [x] **AWS Certified Cloud Practitioner**
 - [ ] AWS Certified Solutions Architect - Associate (estudando)
-- **Zootecnia** - Universidade Federal Rural do Rio de Janeiro (UFRRJ)
+- **Zootecnia** - FAGRAM Faculdade de Ciências Agro Ambientais
 
 ---
 
 ## 🐄 Experiência Anterior: Gestão Pecuária (2000-2019)
 
-- Gestão de 930 hectares + 1.200 cabeças de gado
+- Gestão de 930 hectares + 1.750 cabeças de gado
 - Implementação de sistemas integrados lavoura-pecuária-floresta (ILPF)
 - Aumento de 35% na produtividade através de gestão baseada em dados
 - Rastreabilidade completa do rebanho
@@ -204,7 +204,7 @@ AWS (complementar):
 ## 📫 Contato
 
 - **GitHub**: [github.com/Mfdemenezes](https://github.com/Mfdemenezes)
-- **Email**: [contato@mfdemenezes.com.br](mailto:contato@mfdemenezes.com.br)
+- **Email**: [mfdemenezes@mbam.com.br](mailto:mfdemenezes@mbam.com.br)
 - **Disponibilidade**: Projetos freelance e consultoria (remoto, GMT-3)
 - **Idiomas**: Português (nativo), Inglês (intermediário), Espanhol (intermediário)
 
