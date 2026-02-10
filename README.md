@@ -23,11 +23,13 @@ Como faixa preta de Jiu-Jitsu com 32 anos de prática, também aplico disciplina
 ## 💼 Projetos em Produção
 
 ### 1. 🥋 ProDojo - SaaS de Gestão de Academias de Jiu-Jitsu
+
 **Status: Em produção** | [prodojo.mbam.com.br](https://prodojo.mbam.com.br)
 
 Sistema completo de gestão para academias de artes marciais com foco em fidelização de alunos através de graduação transparente baseada em métricas objetivas.
 
 **Stack Técnico:**
+
 - **Frontend**: Next.js 16 + React 19 + TypeScript + Tailwind CSS 4
 - **Backend**: Next.js API Routes + Prisma ORM 5
 - **Banco**: PostgreSQL 16 (containerizado) — 22 tabelas
@@ -37,6 +39,7 @@ Sistema completo de gestão para academias de artes marciais com foco em fideliz
 - **Queries**: TanStack React Query
 
 **Funcionalidades:**
+
 - Gestão multi-tenant (múltiplas academias)
 - Sistema de famílias com responsável financeiro
 - Geração automática de mensalidades com desconto por faixa etária
@@ -49,17 +52,20 @@ Sistema completo de gestão para academias de artes marciais com foco em fideliz
 ---
 
 ### 2. 🐄 AgroMM - SaaS de Gestão Pecuária
+
 **Status: Em produção** | [agromm.mbam.com.br](https://agromm.mbam.com.br)
 
 Plataforma SaaS B2B de gestão pecuária de ponta a ponta.
 
 **Stack Técnico:**
+
 - **Frontend**: React 19 + Vite + MUI (Material UI) + React Router + i18next (multi-idioma)
 - **Backend**: FastAPI (Python) + SQLAlchemy + Uvicorn (4 workers)
 - **Banco**: PostgreSQL 16 (containerizado) — 45 tabelas
 - **Auth**: JWT (python-jose + passlib/bcrypt)
 
 **Funcionalidades:**
+
 - Gestão completa do rebanho (nascimentos, vendas, sanidade)
 - Controle financeiro integrado
 - Relatórios e dashboards
@@ -69,11 +75,13 @@ Plataforma SaaS B2B de gestão pecuária de ponta a ponta.
 ---
 
 ### 3. 🔒 Papo Reto - Plataforma de Comunicação Sigilosa
+
 **Status: Em produção** | [papo.mbam.com.br](https://papo.mbam.com.br)
 
 Plataforma de mensagens seguras para profissionais (médicos, advogados) e vítimas de assédio, baseada no protocolo Matrix.
 
 **Stack Técnico:**
+
 - **Servidor Matrix**: Synapse (Python) — protocolo federado de mensagens
 - **Cliente Web**: Element Web (React)
 - **Admin Panel**: Next.js 14 + React 18 + Express 5
@@ -81,6 +89,7 @@ Plataforma de mensagens seguras para profissionais (médicos, advogados) e víti
 - **Auth**: JWT + bcryptjs
 
 **Funcionalidades:**
+
 - Criptografia ponta-a-ponta (protocolo Matrix/Olm)
 - Multi-tenant com isolamento total entre salas
 - Painel administrativo customizado (gestão de usuários, salas, QR codes)
@@ -91,7 +100,7 @@ Plataforma de mensagens seguras para profissionais (médicos, advogados) e víti
 
 ## 🏗️ Infraestrutura Atual
 
-```
+```text
 Servidor: Oracle Cloud Always Free - ARM Ampere A1
 ├── 4 OCPU | 24GB RAM | 200GB SSD
 ├── Ubuntu 24.04 LTS (aarch64)
@@ -129,6 +138,7 @@ AWS (complementar):
 ## 🛠️ Stack Tecnológico
 
 ### ☁️ Cloud & Infraestrutura
+
 - **Oracle Cloud**: Compute (ARM), VCN, NLB, NAT Gateway, Bastion
 - **AWS**: S3, SSM Parameter Store, IAM (em uso), EC2/RDS/CloudFront (migração planejada)
 - **Cloudflare**: DNS, proxy, SSL, WAF
@@ -138,12 +148,14 @@ AWS (complementar):
 ### 💻 Desenvolvimento (com auxílio de IA)
 
 **Backend:**
+
 - Python (FastAPI, SQLAlchemy, Uvicorn)
 - Node.js / Next.js (API Routes, Express)
 - Prisma ORM
 - API RESTful
 
 **Frontend:**
+
 - React 19 + TypeScript
 - Next.js 14/16
 - Tailwind CSS 4
@@ -152,9 +164,11 @@ AWS (complementar):
 - Capacitor (mobile)
 
 **Banco de Dados:**
+
 - PostgreSQL 16 (5 instâncias em produção)
 
 **Automação:**
+
 - n8n (workflows de onboarding e notificações)
 - WAHA (WhatsApp Business API)
 - Web Push notifications
@@ -165,13 +179,13 @@ AWS (complementar):
 
 - [x] **AWS Certified Cloud Practitioner**
 - [ ] AWS Certified Solutions Architect - Associate (estudando)
-- **Zootecnia** - FAGRAM Faculdade de Ciencias Agro Ambientáis
+- **Zootecnia** - Universidade Federal Rural do Rio de Janeiro (UFRRJ)
 
 ---
 
 ## 🐄 Experiência Anterior: Gestão Pecuária (2000-2019)
 
-- Gestão de 930 hectares + 1.750 cabeças de gado
+- Gestão de 930 hectares + 1.200 cabeças de gado
 - Implementação de sistemas integrados lavoura-pecuária-floresta (ILPF)
 - Aumento de 35% na produtividade através de gestão baseada em dados
 - Rastreabilidade completa do rebanho
@@ -190,7 +204,7 @@ AWS (complementar):
 ## 📫 Contato
 
 - **GitHub**: [github.com/Mfdemenezes](https://github.com/Mfdemenezes)
-- **Email**: contato@mfdemenezes.com.br
+- **Email**: [contato@mfdemenezes.com.br](mailto:contato@mfdemenezes.com.br)
 - **Disponibilidade**: Projetos freelance e consultoria (remoto, GMT-3)
 - **Idiomas**: Português (nativo), Inglês (intermediário), Espanhol (intermediário)
 
